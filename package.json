@@ -1,0 +1,9 @@
+{
+  "name": "kangacopter",
+  "version": "1.0.0",
+  "description": "Monorepo for kangacopter",
+  "main": "index.js",
+  "author": "Kelly Russell",
+  "license": "MIT",
+  "private": true
+}
