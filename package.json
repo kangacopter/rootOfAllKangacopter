@@ -5,5 +5,12 @@
   "main": "index.js",
   "author": "Kelly Russell",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.1"
+  }
 }
