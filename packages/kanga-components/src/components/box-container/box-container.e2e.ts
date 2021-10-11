@@ -9,24 +9,17 @@ describe('box-container', () => {
     expect(element).toHaveClass('hydrated');
   });
 
-  // it('renders changes to the name data', async () => {
-  //   const page = await newE2EPage();
+  it('renders changes to the box title and content', async () => {
+    const page = await newE2EPage();
 
-  //   await page.setContent('<box-container></box-container>');
-  //   const component = await page.find('box-container');
-  //   const element = await page.find('box-container >>> div');
-  //   expect(element.textContent).toEqual(`Hello, World! I'm `);
+    await page.setContent('<box-container>some contents</box-container>');
+    const component = await page.find('box-container');
+    expect(component.textContent).toEqual(`some contents`);
 
-  //   component.setProperty('first', 'James');
-  //   await page.waitForChanges();
-  //   expect(element.textContent).toEqual(`Hello, World! I'm James`);
-
-  //   component.setProperty('last', 'Quincy');
-  //   await page.waitForChanges();
-  //   expect(element.textContent).toEqual(`Hello, World! I'm James Quincy`);
-
-  //   component.setProperty('middle', 'Earl');
-  //   await page.waitForChanges();
-  //   expect(element.textContent).toEqual(`Hello, World! I'm James Earl Quincy`);
-  // });
+    // Watch out for snake case vs camel case
+    component.setProperty('boxTitle', 'the element of supper rise');
+    await page.waitForChanges();
+    const titleContainer = await page.find('box-container >>> .box-container__title');
+    expect(titleContainer.textContent).toEqual(`the element of supper rise`);
+  });
 });
