@@ -2,14 +2,14 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property   | Attribute   | Description        | Type     | Default     |
+| ---------- | ----------- | ------------------ | -------- | ----------- |
+| `boxTitle` | `box-title` | Optional box title | `string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

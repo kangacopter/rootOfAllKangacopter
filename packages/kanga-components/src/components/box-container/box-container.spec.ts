@@ -3,16 +3,19 @@ import { MyComponent } from './box-container';
 
 describe('box-container', () => {
   it('renders', async () => {
-    const { root } = await newSpecPage({
+    const page = await newSpecPage({
       components: [MyComponent],
       html: '<box-container></box-container>',
     });
-    expect(root).toEqualHtml(`
+    expect(page.root).toEqualHtml(`
       <box-container>
         <mock:shadow-root>
-          <div>
-            Hello, World! I'm
-          </div>
+        <div>
+      <div class="box-container__title"></div>
+      <div class="box-container__content">
+      <slot></slot>
+        </div>
+        </div>
         </mock:shadow-root>
       </box-container>
     `);
@@ -21,15 +24,17 @@ describe('box-container', () => {
   it('renders with values', async () => {
     const { root } = await newSpecPage({
       components: [MyComponent],
-      html: `<box-container first="Stencil" last="'Don't call me a framework' JS"></box-container>`,
+      html: `<box-container box-title="box title">box innards</box-container>`,
     });
     expect(root).toEqualHtml(`
-      <box-container first="Stencil" last="'Don't call me a framework' JS">
+      <box-container box-title="box title">
         <mock:shadow-root>
-          <div>
-            Hello, World! I'm Stencil 'Don't call me a framework' JS
+        <div>
+          <div class="box-container__title">box title</div>
+          <div class="box-container__content"><slot></slot></div>
           </div>
         </mock:shadow-root>
+        box innards
       </box-container>
     `);
   });
