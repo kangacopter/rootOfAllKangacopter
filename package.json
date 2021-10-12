@@ -11,6 +11,11 @@
     "apps/*"
   ],
   "devDependencies": {
-    "@types/jest": "^27.0.1"
+    "@types/jest": "^27.0.1",
+    "lint-staged": "^11.2.3",
+    "prettier": "2.4.1"
+  },
+  "scripts": {
+    "format": "npx prettier --write"
   }
 }

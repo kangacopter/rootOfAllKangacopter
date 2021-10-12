@@ -1,12 +1,12 @@
-import { newSpecPage } from '@stencil/core/testing';
-import { MyComponent } from './box-container';
+import { newSpecPage } from '@stencil/core/testing'
+import { MyComponent } from './box-container'
 
 describe('box-container', () => {
   it('renders', async () => {
     const page = await newSpecPage({
       components: [MyComponent],
       html: '<box-container></box-container>',
-    });
+    })
     expect(page.root).toEqualHtml(`
       <box-container>
         <mock:shadow-root>
@@ -18,14 +18,14 @@ describe('box-container', () => {
         </div>
         </mock:shadow-root>
       </box-container>
-    `);
-  });
+    `)
+  })
 
   it('renders with values', async () => {
     const { root } = await newSpecPage({
       components: [MyComponent],
       html: `<box-container box-title="box title">box innards</box-container>`,
-    });
+    })
     expect(root).toEqualHtml(`
       <box-container box-title="box title">
         <mock:shadow-root>
@@ -36,6 +36,6 @@ describe('box-container', () => {
         </mock:shadow-root>
         box innards
       </box-container>
-    `);
-  });
-});
+    `)
+  })
+})

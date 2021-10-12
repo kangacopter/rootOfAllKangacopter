@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core'
 
 @Component({
   tag: 'box-container',
@@ -9,7 +9,7 @@ export class MyComponent {
   /**
    * Optional box title
    */
-  @Prop() boxTitle?: string;
+  @Prop() boxTitle?: string
 
   render() {
     return (
@@ -19,6 +19,6 @@ export class MyComponent {
           <slot />
         </div>
       </div>
-    );
+    )
   }
 }
