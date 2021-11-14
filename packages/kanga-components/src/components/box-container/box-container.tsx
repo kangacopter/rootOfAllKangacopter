@@ -1,4 +1,5 @@
 import { Component, Prop, h } from '@stencil/core'
+import { loadFonts } from '../../utils/utils'
 
 @Component({
   tag: 'box-container',
@@ -10,6 +11,11 @@ export class MyComponent {
    * Optional box title
    */
   @Prop() boxTitle?: string
+
+  componentDidLoad() {
+    console.log('i just loaded the box container bruh')
+    loadFonts()
+  }
 
   render() {
     return (
