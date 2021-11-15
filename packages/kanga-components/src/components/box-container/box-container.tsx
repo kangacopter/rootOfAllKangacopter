@@ -1,5 +1,6 @@
 import { Component, Prop, h } from '@stencil/core'
 import { loadFonts } from '../../utils/utils'
+import * as heck from '@kangacopter/kanga-style'
 
 @Component({
   tag: 'box-container',
@@ -15,6 +16,7 @@ export class MyComponent {
   componentDidLoad() {
     console.log('i just loaded the box container bruh')
     loadFonts()
+    console.log(heck, 'heck')
   }
 
   render() {

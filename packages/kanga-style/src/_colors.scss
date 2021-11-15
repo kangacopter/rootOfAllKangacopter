@@ -1,0 +1,102 @@
+:root {
+  /* Base */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Greens */
+  --green-050: #f8fde6;
+  --green-100: #edf8c1;
+  --green-200: #e0f597;
+  --green-300: #d4f06b;
+  --green-400: #caec46;
+  --green-500: #c2e812; /* rgb(194, 232, 18) */ /* main shade */
+  --green-600: #b5d504;
+  --green-700: #a6bf00;
+  --green-800: #97a700;
+  --green-900: #7f8000;
+
+  /* Pinks */
+  --pink-050: #f9e3e8;
+  --pink-100: #f0b9c5;
+  --pink-200: #e58ca0;
+  --pink-300: #da627c; /* rgb(218,98, 125) */ /* main shade */
+  --pink-400: #d14663;
+  --pink-500: #ca2e4b;
+  --pink-600: #bb2a49;
+  --pink-700: #a62545;
+  --pink-800: #931f41;
+  --pink-900: #711639;
+
+  /* Purples */
+  --purple-050: #f3e5f0;
+  --purple-100: #e1bfdc;
+  --purple-200: #ce94c6;
+  --purple-300: #b96cae;
+  --purple-400: #aa4e9e;
+  --purple-500: #9a348e; /* rgb(154, 52, 142) */ /* main shade */
+  --purple-600: #8e2f88;
+  --purple-700: #7e2980;
+  --purple-800: #6f2477;
+  --purple-900: #541c66;
+
+  /* Peaches */
+  --peach-050: #fce6e3;
+  --peach-100: #fec6b0;
+  --peach-200: #fca17d; /* rgb(252, 161, 125) */ /* main shade */
+  --peach-300: #f77d4a;
+  --peach-400: #f36221;
+  --peach-500: #ee4700;
+  --peach-600: #e44100;
+  --peach-700: #d73a00;
+  --peach-800: #c93300;
+  --peach-900: #b12400;
+
+  /* Mints */
+  --mint-050: #e5fdeb;
+  --mint-100: #c0f9ce;
+  --mint-200: #91f5ad; /* rgb(145, 245, 173) */ /* main shade */
+  --mint-300: #5eef8e;
+  --mint-400: #34e778;
+  --mint-500: #00e061;
+  --mint-600: #00cf56;
+  --mint-700: #00bb49;
+  --mint-800: #00a93e;
+  --mint-900: #00872a;
+
+  /* Yellows */
+  --yellow-050: #fff8e1;
+  --yellow-100: #ffebb3;
+  --yellow-200: #ffde81;
+  --yellow-300: #ffd24f;
+  --yellow-400: #ffc728;
+  --yellow-500: #ffbe0a; /* rgb(255, 188, 10) */ /* main shade */
+  --yellow-600: #ffb004;
+  --yellow-700: #ff9d06;
+  --yellow-800: #fe8c07;
+  --yellow-900: #fe6c08;
+
+  /* Reds */
+  --red-050: #ffe9ec;
+  --red-100: #ffc9cc;
+  --red-200: #fa928d;
+  --red-300: #f26561;
+  --red-400: #fb3c36;
+  --red-500: #ff210c; /* rgb(255, 33, 12) */ /* main shade */
+  --red-600: #f10611;
+  --red-700: #df000c;
+  --red-800: #d20002;
+  --red-900: #c50000;
+
+  /* Grayscale */
+
+  --gray-050: #fef9ff;
+  --gray-100: #f9f4ff;
+  --gray-200: #f4effa; /* main shade */
+  --gray-300: #e8e4ef;
+  --gray-400: #c6c1cc;
+  --gray-500: #a7a3ad;
+  --gray-600: #7d7983;
+  --gray-700: #69656f;
+  --gray-800: #49464f;
+  --gray-900: #28252d;
+}

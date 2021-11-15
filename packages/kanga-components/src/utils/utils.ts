@@ -34,3 +34,5 @@ export const loadFonts = () => {
     document.head.appendChild(element)
   }
 }
+
+// export const loadCSS = () => {}
