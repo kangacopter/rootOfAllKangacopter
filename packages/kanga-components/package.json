@@ -23,6 +23,8 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "@kangacopter/kanga-style": "^1.0.0",
     "@stencil/core": "^2.7.0",
     "typescript": "^4.4.3"
   },

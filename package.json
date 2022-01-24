@@ -6,12 +6,13 @@
   "author": "Kelly Russell",
   "license": "MIT",
   "private": true,
-  "workspaces": [
+  "packages": [
     "packages/*",
     "apps/*"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@types/jest": "^27.0.1",
+    "lerna": "^4.0.0",
     "lint-staged": "^11.2.3",
     "prettier": "2.4.1"
   },

@@ -2,11 +2,13 @@
   "name": "@kangacopter/kanga-style",
   "version": "1.0.0",
   "description": "A collection of CSS styles for kangacopter projects",
-  "main": "index.js",
+  "style": "index.css",
+  "main": "index.css",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
+    "node-sass": "^6.0.1",
     "rimraf": "^3.0.2"
   },
   "files": [
@@ -15,5 +17,8 @@
   "scripts": {
     "build": "rimraf css && npm run build-sass",
     "build-sass": "node-sass --output-style expanded src/index.scss ./css/index.css"
+  },
+  "dependencies": {
+    "@kangacopter/kanga-components": "^0.0.1"
   }
 }

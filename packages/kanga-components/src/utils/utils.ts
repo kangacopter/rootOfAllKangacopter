@@ -35,4 +35,13 @@ export const loadFonts = () => {
   }
 }
 
-// export const loadCSS = () => {}
+// export const loadCSS = () => {
+//   let cssElement = document.querySelector("/build/kanga-components.css")
+
+//   if (!cssElement) {
+//     cssElement = document.createElement('link')
+//     cssElement.setAttribute('rel', 'preconnect')
+//     cssElement.setAttribute('href', "/build/kanga-components.css")
+//     document.head.appendChild(cssElement)
+//   }
+// }

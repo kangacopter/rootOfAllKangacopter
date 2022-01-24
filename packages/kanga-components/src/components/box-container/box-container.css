@@ -1,17 +1,18 @@
+
 :host {
   display: block;
   font-family: 'Cousine', sans-serif;
   font-size: 1rem;
 }
 .box-container__title {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   max-width: max-content;
   padding: 0 0.5rem;
 }
 .box-container__content {
-  border: 0.1rem solid black;
-  background-color: white;
+  border: 0.1rem solid var(--black);
+  background-color: var(--white);
   padding: 1rem;
-  box-shadow: 0.188rem 0.188rem 0 black;
+  box-shadow: 0.188rem 0.188rem 0 var(--black);
 }
