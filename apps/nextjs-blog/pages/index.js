@@ -19,6 +19,12 @@ export default function Home() {
             COMPONENTS. I AM AN I D I O T!
           </div>
         </box-container>
+        <br />
+        <box-container box-title="Another Test">
+          <div>
+            This is a github test. Sorry, man.
+          </div>
+        </box-container>
       </main>
     </>
   )
