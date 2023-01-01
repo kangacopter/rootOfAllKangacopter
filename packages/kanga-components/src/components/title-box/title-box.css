@@ -1,0 +1,30 @@
+:host {
+  font-family: 'Cousine', sans-serif;
+  font-size: 1rem;
+}
+.title-box {
+  border: 3px solid var(--black);
+  background-color: var(--white);
+  box-shadow: 0.188rem 0.188rem 0 var(--black);
+}
+.title-box__header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--black);
+  background-color: var(--pink-050);
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+}
+.title-box__title {
+  font-size: 1.25rem;
+  max-width: max-content;
+  padding-right: 0.3rem;
+  text-shadow: 0.09rem 0.09rem 0 var(--pink-200);
+}
+.title-box__sub-title {
+  color: var(--pink-400);
+  font-size: 0.75rem;
+}
+.title-box__content {
+  padding: 1rem;
+}

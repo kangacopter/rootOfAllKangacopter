@@ -12,6 +12,16 @@ export namespace Components {
          */
         "boxTitle"?: string;
     }
+    interface TitleBox {
+        /**
+          * Optional box sub title
+         */
+        "boxSubTitle"?: string;
+        /**
+          * Box title
+         */
+        "boxTitle": string;
+    }
 }
 declare global {
     interface HTMLBoxContainerElement extends Components.BoxContainer, HTMLStencilElement {
@@ -20,8 +30,15 @@ declare global {
         prototype: HTMLBoxContainerElement;
         new (): HTMLBoxContainerElement;
     };
+    interface HTMLTitleBoxElement extends Components.TitleBox, HTMLStencilElement {
+    }
+    var HTMLTitleBoxElement: {
+        prototype: HTMLTitleBoxElement;
+        new (): HTMLTitleBoxElement;
+    };
     interface HTMLElementTagNameMap {
         "box-container": HTMLBoxContainerElement;
+        "title-box": HTMLTitleBoxElement;
     }
 }
 declare namespace LocalJSX {
@@ -31,8 +48,19 @@ declare namespace LocalJSX {
          */
         "boxTitle"?: string;
     }
+    interface TitleBox {
+        /**
+          * Optional box sub title
+         */
+        "boxSubTitle"?: string;
+        /**
+          * Box title
+         */
+        "boxTitle"?: string;
+    }
     interface IntrinsicElements {
         "box-container": BoxContainer;
+        "title-box": TitleBox;
     }
 }
 export { LocalJSX as JSX };
@@ -40,6 +68,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "box-container": LocalJSX.BoxContainer & JSXBase.HTMLAttributes<HTMLBoxContainerElement>;
+            "title-box": LocalJSX.TitleBox & JSXBase.HTMLAttributes<HTMLTitleBoxElement>;
         }
     }
 }

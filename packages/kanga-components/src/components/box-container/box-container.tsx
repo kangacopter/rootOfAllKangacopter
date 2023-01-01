@@ -12,9 +12,8 @@ export class MyComponent {
    */
   @Prop() boxTitle?: string
 
-  
+  // TODO: figure out if i still needed
   componentDidLoad() {
-    console.log('i just loaded the box container bruh')
     loadFonts()
     // loadCSS()
   }

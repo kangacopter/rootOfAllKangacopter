@@ -11,7 +11,7 @@
   padding: 0 0.5rem;
 }
 .box-container__content {
-  border: 0.1rem solid var(--black);
+  border: 3px solid var(--black);
   background-color: var(--white);
   padding: 1rem;
   box-shadow: 0.188rem 0.188rem 0 var(--black);

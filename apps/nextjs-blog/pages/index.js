@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </box-container>
         <br />
-        <box-container box-title="Another Test">
+        <box-container>
           <div>
             This is a github test. Sorry, man.
           </div>

@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
-  <link rel="stylesheet" href="/build/kanga-components.css">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <title>kangacopter component library</title>
+    <link rel="stylesheet" href="/build/kanga-components.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>kangacopter component library</title>
 
-  <script type="module" src="/build/kanga-components.esm.js"></script>
-  <script nomodule src="/build/kanga-components.js"></script>
-</head>
+    <script type="module" src="/build/kanga-components.esm.js"></script>
+    <script nomodule src="/build/kanga-components.js"></script>
+  </head>
 
-<body>
-  <box-container box-title="box title">
-    <div>Almost before we knew it, we had left the ground.</div>
-  </box-container>
-</body>
-
+  <body>
+    <box-container box-title="box title">
+      Almost before we knew it, we had left the ground.
+    </box-container>
+    <br />
+    <title-box box-title="title" box-sub-title="subtitle is subtitley">
+      <p slot="title-box__right-title-content">
+        <button onclick="doit()">click me</button>
+      </p>
+      <div slot="title-box__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta
+        massa vel lacus posuere, ac fermentum nunc condimentum. Maecenas sed
+        enim id odio rhoncus efficitur. Suspendisse potenti. Fusce vitae sapien
+        at purus hendrerit elementum vel eleifend sapien. Maecenas ac arcu mi.
+        Praesent malesuada porttitor eleifend. Suspendisse eleifend neque non
+        urna blandit accumsan. Aliquam in mi eget dolor ornare iaculis. Vivamus
+        ut arcu a metus tincidunt rhoncus. Nullam fermentum, nisi sit amet
+        sodales dictum, felis erat congue orci, et egestas turpis dolor nec
+        lectus. Integer nec lacus volutpat diam gravida consequat a vitae enim.
+        Aliquam sed arcu faucibus, porta ante et, suscipit leo. Suspendisse
+        congue, orci a varius viverra, arcu mi luctus nisi, quis mattis lorem
+        magna et urna. Pellentesque rhoncus sed felis non semper. Cras eget
+        vehicula erat. Proin quis justo turpis. Nunc egestas, velit nec mattis
+        laoreet, ligula massa vehicula justo, sodales porta risus ex a libero.
+        Maecenas efficitur a est nec auctor. Sed eros lectus, consectetur quis
+        semper id, malesuada ut lacus. Donec dignissim non urna ac mollis.
+        Suspendisse potenti. Morbi elit diam, ultrices ut nulla et, ultricies
+        scelerisque tellus. Etiam malesuada tellus in vulputate pellentesque.
+        Phasellus venenatis est at lectus fringilla, pretium ornare lectus
+        auctor.
+      </div>
+    </title-box>
+    <script>
+      function doit() {
+        alert("oh hey")
+      }
+     </script>
+  </body>
 </html>
