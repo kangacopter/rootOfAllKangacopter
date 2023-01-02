@@ -14,7 +14,7 @@ export class TitleBox {
   /**
    * Optional box sub title
    */
-   @Prop() boxSubTitle?: string
+  @Prop() boxSubTitle?: string
 
   // TODO: figure out if i still needed
   componentDidLoad() {
